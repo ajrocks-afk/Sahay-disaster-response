@@ -12,6 +12,12 @@ SAHAY aims to bring these needs into one coordinated platform for authorities, r
 
 ---
 
+# 🛡️ SAHAY
+
+### *When disaster strikes, safety needs more than rescue.*
+
+---
+
 ## 🚨 The Problem
 
 Traditional disaster response systems primarily focus on:
@@ -324,8 +330,4 @@ If you find the idea interesting:
 * 🛠️ Contribute ideas
 * 🚀 Help us explore the future of safer disaster response
 
----
 
-# 🛡️ SAHAY
-
-### *When disaster strikes, safety needs more than rescue.*
