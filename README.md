@@ -2,103 +2,123 @@
 
 > **When disaster strikes, safety needs more than rescue.**
 
-SAHAY is a **gender-sensitive disaster response and shelter safety platform** designed to make emergency evacuation and shelter management safer, more coordinated, and more inclusive.
-
-During disasters, rescue is only the first step. People may also need **safe accommodation, privacy, sanitation, medical assistance, family reunification, security, and discreet ways to report incidents or request help.**
-
-SAHAY aims to bring these needs into one coordinated platform for authorities, response teams, shelter managers, institutions, and citizens.
-
 🌐 **Live Demo:** https://sahay-disaster-response.vercel.app/
 
+SAHAY is a **gender-sensitive disaster response and shelter safety platform** designed to make emergency evacuation and shelter management safer, more coordinated, and more inclusive.
+
+During a disaster, rescue is only the beginning. People may also need **safe accommodation, privacy, sanitation, medical assistance, security, family reunification, and discreet ways to request help.**
+
+SAHAY focuses on these often-overlooked aspects of disaster response by creating a digital coordination layer connecting **citizens, shelters, and response teams**.
+
 ---
 
-# 🛡️ SAHAY
+# 🚨 The Problem
 
-### *When disaster strikes, safety needs more than rescue.*
-
----
-
-## 🚨 The Problem
-
-Traditional disaster response systems primarily focus on:
+Traditional disaster-response systems primarily focus on:
 
 * 🚑 Rescue and evacuation
 * 🏥 Emergency medical response
 * 🏠 Temporary shelter
 * 📢 Emergency communication
 
-However, **being rescued does not always mean being safe.**
+However:
 
-Women, children, elderly people, people with disabilities, and other vulnerable groups can face additional challenges during evacuation and at emergency shelters, including:
+> **Being rescued does not always mean being safe.**
+
+Women, children, elderly people, people with disabilities, and other vulnerable groups can face additional challenges during evacuation and at emergency shelters.
+
+These may include:
 
 * Lack of privacy
 * Unsafe or overcrowded shelters
-* Inadequate sanitation facilities
+* Inadequate sanitation
 * Difficulty accessing medical assistance
 * Family separation
 * Security concerns
 * Difficulty reporting sensitive incidents
-* Limited visibility into shelter conditions
+* Poor visibility into shelter conditions
+* Limited connectivity during disasters
 
-At the same time, authorities may lack a **unified, real-time view of shelter readiness and citizen needs.**
-
----
-
-## 💡 Our Solution
-
-**SAHAY acts as a coordination layer between citizens, shelters, and response authorities.**
-
-Instead of replacing existing emergency systems, SAHAY is designed to **complement them** by bringing safety, shelter readiness, and vulnerable-user needs into a single interface.
-
-### Core Focus
-
-> **Rescue → Safety → Recovery**
-
-SAHAY focuses on what happens **after and alongside rescue**, ensuring that emergency response considers not only *where people are evacuated*, but also *whether they are actually safe there.*
+At the same time, authorities and response teams may not have a unified view of **where people need help and whether shelters are actually ready to support them.**
 
 ---
 
-## ✨ Key Features
+# 💡 Our Solution
 
-### 🏠 Safe Shelter Discovery
+**SAHAY acts as a coordination layer for safer disaster response.**
 
-Help users identify nearby emergency shelters and understand their availability and safety-related information.
+Rather than replacing existing emergency systems, SAHAY is designed to **complement existing emergency and disaster-management infrastructure** by bringing shelter safety, citizen needs, and response coordination into one platform.
 
-### 🛡️ Shelter Safety Visibility
+### Our approach:
 
-Provide authorities and response teams with a clearer view of shelter conditions and readiness.
+**Rescue → Safety → Recovery**
 
-### 🚨 Discreet SOS Assistance
+SAHAY asks an important question:
 
-Enable users to seek assistance in situations where openly asking for help may not be safe or practical.
+> **"After people are rescued, are they actually safe?"**
 
-### 📍 Location-Based Response
-
-Use location-aware information to connect people with relevant shelters and emergency resources.
-
-### 👥 Vulnerable-Group Support
-
-Designed with the specific needs of women and other vulnerable groups in disaster situations in mind.
-
-### 📊 Response Coordination
-
-Create a common information layer for authorities, shelter managers, security teams, medical teams, and relief workers.
-
-### 🤖 AI-Assisted Intelligence
-
-Future versions of SAHAY can use AI to assist with:
-
-* Complaint verification
-* Duplicate report detection
-* Incident prioritisation
-* Pattern and root-cause detection
-* Predictive identification of emerging civic/disaster risks
+The platform focuses on making the emergency journey safer — from finding an appropriate shelter to accessing assistance and understanding available safety resources.
 
 ---
 
-## 🎯 Target Users
+# ✨ Key Features
 
-SAHAY is designed for multiple stakeholders within the disaster-response ecosystem.
+## 🏠 Safe Shelter Discovery
+
+Helps users discover nearby emergency shelters and access important shelter-related information.
+
+## 🛡️ Shelter Safety
+
+Provides a safety-focused interface for understanding shelter conditions, availability, and essential facilities.
+
+## 🚨 Discreet SOS Assistance
+
+Provides a discreet way for users to seek assistance when openly asking for help may not be safe or practical.
+
+## 📍 Location-Based Response
+
+Uses location-aware features to connect users with relevant shelters and emergency resources.
+
+## 📶 Offline Mode
+
+SAHAY includes **offline functionality** for situations where internet connectivity may be weak, disrupted, or unavailable.
+
+This is particularly important during disasters, when communication infrastructure can become unreliable.
+
+The project uses a **service worker** to support offline functionality.
+
+## 👩 Gender-Sensitive Disaster Response
+
+SAHAY considers safety requirements that can be particularly important for women and other vulnerable groups during evacuation and sheltering.
+
+## 👥 Vulnerable-Group Support
+
+The platform is designed with the needs of vulnerable populations in mind, including:
+
+* Women
+* Children
+* Elderly people
+* People with disabilities
+* People requiring medical assistance
+
+## 📊 Response Coordination
+
+Provides a common digital layer for different stakeholders involved in emergency response, including:
+
+* Authorities
+* Shelter managers
+* Security teams
+* Medical teams
+* Relief workers
+* Citizens
+
+## 📱 Progressive Web Experience
+
+The project includes a web-app structure with a **web manifest and service worker**, supporting an experience designed for accessibility across devices and low-connectivity situations.
+
+---
+
+# 🎯 Target Users
 
 | User                                  | Purpose                                                      |
 | ------------------------------------- | ------------------------------------------------------------ |
@@ -107,17 +127,17 @@ SAHAY is designed for multiple stakeholders within the disaster-response ecosyst
 | 👮 Security & Police Teams            | Respond to safety-related incidents                          |
 | 🏥 Medical & Relief Teams             | Coordinate medical and relief assistance                     |
 | 👤 Citizens                           | Find safer shelters and request assistance                   |
-| 🏫 Institutions                       | Support disaster preparedness across campuses and facilities |
+| 🏫 Institutions                       | Improve disaster preparedness across campuses and facilities |
 
 ---
 
-## 🌍 Where SAHAY Can Be Used
+# 🌍 Potential Use Cases
 
-SAHAY can potentially support disaster preparedness and response across:
+SAHAY can potentially be adapted for:
 
 * 🏙️ Cities
-* 🌾 Rural & semi-urban areas
-* 🏫 Colleges & universities
+* 🌾 Rural and semi-urban areas
+* 🏫 Colleges and universities
 * 🏥 Hospitals
 * 🏢 Corporate campuses
 * 🏘️ Residential communities
@@ -126,93 +146,154 @@ SAHAY can potentially support disaster preparedness and response across:
 
 ---
 
-## 🧠 What Makes SAHAY Different?
+# 🧠 What Makes SAHAY Different?
 
-Most disaster-response solutions focus heavily on **rescue and emergency communication**.
+Many disaster-response solutions focus heavily on **rescue, evacuation, and emergency communication**.
 
-SAHAY focuses on the question:
+SAHAY focuses on what happens **during and after rescue**.
 
-> **"After people are rescued, are they actually safe?"**
+### SAHAY combines:
 
-The platform combines:
+**Disaster Response + Shelter Safety + Gender Sensitivity + Citizen Needs + Response Coordination + Offline Accessibility**
 
-**Disaster Response + Shelter Safety + Gender Sensitivity + Coordination + Citizen Needs**
+The goal is to shift the definition of disaster response from:
 
-into a single ecosystem.
+> **"Did we rescue them?"**
 
----
+to:
 
-## 🏗️ Current Status
-
-SAHAY is currently an **early-stage prototype / MVP** developed to demonstrate the concept, user experience, and potential future architecture of the platform.
-
-The current version focuses primarily on the **frontend experience and core product concept**.
-
-Future development can include:
-
-* Real-time backend infrastructure
-* Government system integrations
-* Live shelter databases
-* Authentication & role-based access
-* Real-time notifications
-* AI-powered incident analysis
-* Verified emergency data
-* Analytics dashboards
-* Multilingual support
-* Offline/low-connectivity functionality
+> **"Did we get them somewhere safe?"**
 
 ---
 
-## 🛠️ Technology Stack
+# 🖥️ Current Prototype
 
-### Frontend
+SAHAY is currently a **functional frontend prototype / MVP-level demonstration**.
 
-* ⚛️ React
-* ⚡ Vite
-* 🎨 CSS
-* 🧩 Lucide React
-* 🗺️ Location / map-based UI concepts
+The current implementation includes multiple user-facing pages and reusable components covering different aspects of the SAHAY ecosystem.
 
-### Deployment
+### Current capabilities include:
 
-* ▲ Vercel
+* 🏠 Shelter discovery
+* 🛡️ Shelter safety interfaces
+* 🚨 Emergency assistance
+* 📍 Location-based experiences
+* 👥 Citizen-focused features
+* 🏛️ Authority-focused interfaces
+* 📊 Safety and response dashboards
+* 👨‍👩‍👧 Family-related emergency features
+* 📝 Incident/reporting interfaces
+* 👥 Response-team interfaces
+* 📶 Offline functionality
+* 📱 Responsive web experience
 
-### Future Backend & Intelligence
+The prototype is intended to demonstrate the **product vision, user experience, and potential architecture** of SAHAY.
 
-Potential technologies include:
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+* ⚛️ **React**
+* ⚡ **Vite**
+* 🎨 **CSS**
+* 🧩 **Lucide React**
+
+## Web & Offline Capabilities
+
+* 📱 Web App Manifest
+* ⚙️ Service Worker
+* 📶 Offline functionality
+
+## Deployment
+
+* ▲ **Vercel**
+
+## Future Infrastructure
+
+Potential technologies for further development include:
 
 * Node.js
 * REST APIs
 * Database infrastructure
 * AI/ML services
 * Geospatial services
-* Government / institutional APIs
+* Government and institutional APIs
 
 ---
 
-## 🖥️ Project Structure
+# 🏗️ Project Structure
 
 ```text
-SAHAY/
+eureka-platform/
 │
 ├── public/
+│   ├── favicon.svg
+│   ├── icons.svg
+│   ├── manifest.webmanifest
+│   └── sw.js
 │
 ├── src/
-│   ├── assets/
 │   ├── components/
+│   │   ├── AboutSahay.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── HowItWorks.jsx
+│   │   ├── LiveShelters.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── NetworkStatus.jsx
+│   │   ├── QuickActions.jsx
+│   │   ├── ResponseTeams.jsx
+│   │   ├── SafetyDashboard.jsx
+│   │   └── SahayLogo.jsx
+│   │
 │   ├── pages/
+│   │   ├── Authority.jsx
+│   │   ├── Citizen.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Emergency.jsx
+│   │   ├── EvacueeRecords.jsx
+│   │   ├── Family.jsx
+│   │   ├── Home.jsx
+│   │   ├── Report.jsx
+│   │   ├── Shelters.jsx
+│   │   └── SignIn.jsx
+│   │
 │   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
+│   ├── index.css
+│   └── main.jsx
 │
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
 ├── package.json
-├── vite.config.js
-└── README.md
+├── README.md
+└── vite.config.js
 ```
+
+### 📂 Folder Overview
+
+| Folder / File                 | Purpose                                         |
+| ----------------------------- | ----------------------------------------------- |
+| `public/`                     | Static assets and web-app resources             |
+| `public/sw.js`                | Service worker supporting offline functionality |
+| `public/manifest.webmanifest` | Web-app manifest                                |
+| `src/components/`             | Reusable UI components                          |
+| `src/pages/`                  | Main application pages                          |
+| `App.jsx`                     | Main React application                          |
+| `main.jsx`                    | React entry point                               |
+| `index.css`                   | Global styling and SAHAY design system          |
+| `package.json`                | Dependencies and project scripts                |
+| `vite.config.js`              | Vite configuration                              |
+| `eslint.config.js`            | ESLint configuration                            |
+| `index.html`                  | Main HTML entry point                           |
+| `README.md`                   | Project documentation                           |
 
 ---
 
-## 🚀 Running Locally
+# 🚀 Running Locally
 
 ### 1. Clone the repository
 
@@ -238,11 +319,11 @@ npm install
 npm run dev
 ```
 
-The application will then be available through the local development URL provided by Vite.
+Vite will provide the local development URL in the terminal.
 
 ---
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
 ### SAHAY Website
 
@@ -250,56 +331,97 @@ The application will then be available through the local development URL provide
 
 ---
 
-## 🏆 Project Context
+# 🏆 Project Context
 
 SAHAY was developed as an **early-stage startup/project concept for the Eureka pitching competition**.
 
-The project is currently at the **ideation / prototype stage** and is being developed to explore how technology can improve disaster response, shelter safety, and support for vulnerable communities.
+The project is currently at the **ideation/prototype stage**, exploring how technology can improve disaster response, shelter safety, and support for vulnerable communities.
 
-> **The competition provided the platform to develop and pitch the initial SAHAY concept; the project's long-term vision extends beyond the competition.**
+The Eureka pitching competition provided an opportunity to develop and present the initial SAHAY concept.
 
----
-
-## 🔮 Future Vision
-
-SAHAY aims to evolve from a prototype into a scalable **disaster-safety coordination platform** that can work alongside existing government and emergency-response infrastructure.
-
-Future possibilities include:
-
-* 🌐 Government & civic-system integration
-* 📡 Real-time disaster data
-* 🗺️ Live shelter capacity monitoring
-* 🤖 AI-powered incident intelligence
-* 📱 Mobile application
-* 🌍 Multilingual support
-* 📶 Offline / low-network operation
-* 📊 Authority dashboards
-* 🔐 Secure role-based access
-* 🏫 Institutional disaster-safety deployments
-
-The long-term goal is to help create a disaster-response ecosystem where **rescue is not considered the end of the response, but the beginning of safety.**
+> **The vision for SAHAY extends beyond the competition toward a scalable disaster-safety platform.**
 
 ---
 
-## ⚠️ Current Limitations
+# 🔮 Future Roadmap
 
-SAHAY is currently a prototype and should **not be treated as an operational emergency-response system.**
+SAHAY can evolve from a prototype into a scalable disaster-safety coordination platform that works alongside existing emergency and government infrastructure.
+
+Future development can include:
+
+### 🌐 Government & Institutional Integration
+
+* Government disaster-management system integration
+* Institutional emergency-management integration
+* Verified emergency information
+* Shelter database integration
+
+### 📡 Real-Time Response
+
+* Real-time shelter capacity
+* Live emergency updates
+* Response-team coordination
+* Real-time notifications
+
+### 🤖 AI-Powered Intelligence
+
+Future versions may use AI to assist with:
+
+* Complaint verification
+* Duplicate report detection
+* Incident prioritisation
+* Pattern detection
+* Root-cause analysis
+* Predictive identification of emerging risks
+
+### 📱 Platform Expansion
+
+* Dedicated mobile application
+* Multilingual support
+* Advanced offline capabilities
+* Authority dashboards
+* Institutional deployments
+* Analytics and reporting
+
+---
+
+# ⚠️ Current Limitations
+
+SAHAY is currently a **prototype** and should not be treated as a production emergency-response system.
 
 Current limitations include:
 
 * No live government emergency-data integration
-* No production backend
-* No verified real-time shelter database
-* Prototype-level SOS functionality
+* No production-scale backend infrastructure
+* No verified nationwide shelter database
+* Prototype-level SOS implementation
 * Limited real-world disaster testing
-* AI features are part of the future development roadmap
-* Requires institutional partnerships and verified data for large-scale deployment
+* AI intelligence features are part of the future roadmap
+* Large-scale deployment would require institutional partnerships
+* Real-world emergency information would need to come from verified authorities
 
-For actual emergencies, users should continue to rely on official emergency services and local authorities.
+For actual emergencies, users should continue to rely on **official emergency services and local authorities.**
 
 ---
 
-## 👨‍💻 Team
+# 🔐 Safety & Privacy
+
+Because SAHAY deals with emergency and potentially sensitive information, a production implementation would require strong security measures, including:
+
+* 🔐 Secure authentication
+* 👥 Role-based access control
+* 🔒 Data encryption
+* 📍 Secure location handling
+* 🕵️ Privacy-preserving incident reporting
+* ✅ Verified emergency information
+* 📋 Audit logging
+* 🗄️ Appropriate data-retention policies
+
+These measures would be essential before deployment in real-world emergency environments.
+
+---
+
+# 👨‍💻 Team
 
 **SAHAY** is being developed by a student team exploring the intersection of:
 
@@ -312,15 +434,15 @@ For actual emergencies, users should continue to rely on official emergency serv
 
 ---
 
-## 📌 Disclaimer
+# 📌 Disclaimer
 
 SAHAY is an **academic/startup prototype and demonstration project**.
 
-Information shown in the prototype may not represent live emergency data. The platform does not replace official emergency services, government disaster-management systems, police, medical services, or other authorised emergency responders.
+Information displayed in the prototype may not represent live emergency data. SAHAY does not replace official emergency services, government disaster-management systems, police, medical services, or other authorised emergency responders.
 
 ---
 
-## ⭐ Support the Project
+# ⭐ Support SAHAY
 
 If you find the idea interesting:
 
@@ -330,4 +452,8 @@ If you find the idea interesting:
 * 🛠️ Contribute ideas
 * 🚀 Help us explore the future of safer disaster response
 
+---
 
+# 🛡️ SAHAY
+
+> **When disaster strikes, safety needs more than rescue.**
