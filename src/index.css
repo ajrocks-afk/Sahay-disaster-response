@@ -1255,62 +1255,64 @@ a {
 /* =========================================
    FLOATING CARDS
 ========================================= */
+/* =========================================
+   FLOATING MAP CARDS - FIXED POSITIONING
+========================================= */
 
 .floating-assistance,
 .floating-shelter {
+  position: absolute;
+  z-index: 5;
 
-  position:
-    absolute;
+  display: flex;
+  align-items: center;
+  gap: 9px;
 
-  z-index:
-    5;
+  padding: 11px 13px;
+  border-radius: 16px;
 
-  display:
-    flex;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.78);
 
-  align-items:
-    center;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 
-  gap:
-    9px;
-
-  padding:
-    11px 13px;
-
-  border-radius:
-    16px;
-
-  background:
-    rgba(255,255,255,0.72);
-
-  border:
-    1px solid
-    rgba(255,255,255,0.75);
-
-  backdrop-filter:
-    blur(20px);
-
-  box-shadow:
-    0 15px 35px
-    rgba(7,26,43,0.1);
+  box-shadow: 0 15px 35px rgba(7, 26, 43, 0.10);
 }
 
-
+/* DISCREET ASSISTANCE
+   Keep it left of the YOU marker */
 .floating-assistance {
-  left: 20px;
-  top: 82%;
+  left: 12px;
+  top: 87%;
 
-  transform: translateY(-235px);
+  transform: translateY(-50%);
 }
 
-
+/* SHELTER VERIFIED
+   Keep it high and away from SAFE SHELTER */
 .floating-shelter {
+  right: -8px;
+  top: 4%;
+}
 
-  right:
-    -5px;
+/* =========================================
+   MOBILE
+========================================= */
 
-  top:
-    16%;
+@media (max-width: 600px) {
+
+  .floating-assistance {
+    left: 8px;
+    top: 48%;
+    transform: translateY(-50%);
+  }
+
+  .floating-shelter {
+    right: -5px;
+    top: 3%;
+  }
+
 }
 
 
@@ -11355,5 +11357,198 @@ a {
 
   .citizen-lower-actions {
     grid-template-columns: 1fr;
+  }
+}
+/* =========================================
+   SAHAY CODED LOGO
+========================================= */
+
+.sahay-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.sahay-logo.nav-logo {
+  width: 150px;
+  height: auto;
+}
+
+.sahay-logo.footer-logo {
+  width: 190px;
+  height: auto;
+}
+
+.sahay-logo-symbol {
+  width: 48px;
+  height: 48px;
+}
+
+/* Navbar logo button */
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.nav-brand .sahay-logo {
+  width: 150px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.nav-brand:hover .sahay-logo {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+/* Footer */
+
+.footer-brand .sahay-logo {
+  width: 190px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .nav-brand .sahay-logo {
+    width: 125px;
+  }
+
+  .footer-brand .sahay-logo {
+    width: 165px;
+  }
+}
+/* =========================================
+   SAHAY FOOTER CODED LOGO
+========================================= */
+
+.footer-logo {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0 0 18px 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-logo-svg {
+  width: 190px;
+  height: auto;
+  display: block;
+}
+
+.footer-logo:hover .footer-logo-svg {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+@media (max-width: 700px) {
+  .footer-logo-svg {
+    width: 165px;
+  }
+}
+/* =========================================
+   SAHAY FOOTER VISIBILITY FIX
+========================================= */
+
+.sahay-footer {
+  background: #071A2B !important;
+  color: #FFFFFF;
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-location {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-column h4 {
+  color: #FFFFFF;
+}
+
+.footer-column button {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.footer-column button:hover {
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-made {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-logo-svg {
+  width: 190px;
+  height: auto;
+  display: block;
+}
+/* =========================================
+   SAHAY NETWORK STATUS
+========================================= */
+
+.network-status {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 13px;
+
+  border-radius: 999px;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  transition: all 0.25s ease;
+}
+
+.network-status.online {
+  background: rgba(0, 184, 148, 0.12);
+  color: #008F73;
+  border: 1px solid rgba(0, 184, 148, 0.25);
+}
+
+.network-status.offline {
+  background: rgba(255, 122, 0, 0.14);
+  color: #C75A00;
+  border: 1px solid rgba(255, 122, 0, 0.3);
+}
+
+@media (max-width: 700px) {
+  .network-status {
+    right: 12px;
+    bottom: 12px;
+    font-size: 0.65rem;
+    padding: 8px 10px;
   }
 }

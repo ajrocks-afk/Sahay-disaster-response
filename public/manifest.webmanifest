@@ -1,0 +1,10 @@
+{
+  "name": "SAHAY - Disaster Response & Shelter Safety",
+  "short_name": "SAHAY",
+  "description": "Offline-first disaster response and shelter safety platform.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071A2B",
+  "theme_color": "#071A2B",
+  "orientation": "portrait-primary"
+}

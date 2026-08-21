@@ -11,12 +11,14 @@ import EvacueeRecords from "./pages/EvacueeRecords";
 import SignIn from "./pages/SignIn";
 import Citizen from "./pages/Citizen";
 
+import NetworkStatus from "./components/NetworkStatus";
+
 function App() {
   return (
     <BrowserRouter>
+
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/emergency" element={<Emergency />} />
         <Route path="/shelters" element={<Shelters />} />
         <Route path="/shelters/:shelterId" element={<Shelters />} />
@@ -27,8 +29,10 @@ function App() {
         <Route path="/authority" element={<Authority />} />
         <Route path="/family" element={<Family />} />
         <Route path="/authority/records" element={<EvacueeRecords />} />
-        
       </Routes>
+
+      <NetworkStatus />
+
     </BrowserRouter>
   );
 }

@@ -7,7 +7,7 @@ import {
   Heart
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
+import SahayLogo from "./SahayLogo";
 function Footer() {
   const navigate = useNavigate();
 
@@ -39,20 +39,9 @@ function Footer() {
           <button
             className="footer-logo"
             onClick={() => navigate("/")}
+            aria-label="Go to SAHAY home"
           >
-            <div className="footer-logo-symbol">
-              <ShieldCheck size={22} />
-            </div>
-
-            <div>
-              <div className="footer-brand-name">
-                SAHAY
-              </div>
-
-              <div className="footer-brand-tagline">
-                SAFE DISASTER RESPONSE
-              </div>
-            </div>
+            <SahayLogo className="footer-logo-svg" />
           </button>
 
           <p>

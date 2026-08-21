@@ -8,3 +8,14 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js")
+      .then(() => {
+        console.log("SAHAY offline mode enabled");
+      })
+      .catch((error) => {
+        console.error("SAHAY offline mode failed:", error);
+      });
+  });
+}

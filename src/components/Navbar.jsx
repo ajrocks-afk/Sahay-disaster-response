@@ -1,5 +1,6 @@
 import { ShieldCheck, Menu, ArrowUpRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import SahayLogo from "./SahayLogo";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -35,11 +36,7 @@ function Navbar() {
         onClick={() => navigate("/")}
         aria-label="Go to SAHAY home"
       >
-        <img
-          src="/sahay-logo.png"
-          alt="SAHAY - Disaster Response & Shelter Safety"
-          className="nav-logo-image"
-        />
+        <SahayLogo className="nav-logo" />
       </button>
 
       <nav className="nav-links">
